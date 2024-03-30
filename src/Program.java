@@ -1,5 +1,3 @@
-package ru.geekbrains.oop.lesson7.observer;
-
 public class Program {
 
     /**
@@ -20,12 +18,13 @@ public class Program {
         Company geekBrains = new Company("GeekBrains", publisher, 98000);
 
         Student student = new Student("Student #1");
-        Master master1 = new Master("Master #1");
-        Master master2 = new Master("Master #2");
+        Master master = new Master("Master #1");
+        Expert expert = new Expert("Эксперт #1");
+
 
         publisher.registerObserver(student);
-        publisher.registerObserver(master1);
-        publisher.registerObserver(master2);
+        publisher.registerObserver(master);
+        publisher.registerObserver(expert);
 
         for (int i = 0; i < 3; i++){
             google.needEmployee();

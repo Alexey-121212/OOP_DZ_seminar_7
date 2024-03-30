@@ -1,5 +1,3 @@
-package ru.geekbrains.oop.lesson7.observer;
-
 import java.util.Random;
 
 public class Company {
