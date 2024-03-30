@@ -1,5 +1,7 @@
 public interface Observer {
 
-    void receiveOffer(String nameCompany, Vacancy vacancy);
+    boolean receiveOffer(String nameCompany, Vacancy vacancy);
+
+    VacancyType getVacancyType();
 
 }

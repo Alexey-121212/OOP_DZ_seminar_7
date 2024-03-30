@@ -1,10 +1,12 @@
+import java.util.ArrayList;
+
 public interface Publisher {
 
-    void sendOffer(String companyName, Vacancy vacancy);
+    ArrayList<Observer> sendOffer(String companyName, Vacancy vacancy);
 
     void registerObserver(Observer observer);
 
-    void removeObserver(Observer observer);
+    void removeObservers(ArrayList<Observer> observers);
 
 
 }

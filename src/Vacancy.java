@@ -1,13 +1,13 @@
 public class Vacancy {
-    private String name;
+    private VacancyType name;
     private int salary;
 
-    public Vacancy(String name, int salary) {
+    public Vacancy(VacancyType name, int salary) {
         this.name = name;
         this.salary = salary;
     }
 
-    public String getName() {
+    public VacancyType getName() {
         return name;
     }
 
